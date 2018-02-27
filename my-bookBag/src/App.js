@@ -3,18 +3,17 @@ import { BrowserRouter as Router, Route} from 'react-router-dom';
 
 import './App.css';
 import Home from './Pages/Home.jsx';
-import Editor from './Pages/Editor.jsx';
+import Main_Page from './Pages/Main_Page.jsx';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <header>
-          <div>
+          <div class='container-fluid'>
             <Route exact path= "/" component={Home}/>
-            <Route  path= "/editor" component={Editor}/>
-
-            </div>
+            <Route  path= "/editor" component={Main_Page}/>
+          </div>
         </header>
       </Router>
     );
