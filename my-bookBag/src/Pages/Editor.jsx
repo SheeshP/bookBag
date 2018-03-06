@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from '../Components/Navbar.jsx';
-import Jumbotron from '../Components/Jumbotron.jsx';
-import Books from '../Components/Books.jsx';
-//import Sidenav from '../Components/Sidenav.jsx';
+import Navbar from '../Components/Home_Page/Navbar.jsx';
+
+import Books from '../Components/Home_Page/Books.jsx';
+
 
 class Editor extends Component {
   render(){

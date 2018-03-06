@@ -1,20 +1,18 @@
 import React, { Component } from 'react';
-import Navbar from '../Components/Navbar.jsx';
-import Jumbotron from '../Components/Jumbotron.jsx';
-import Books from '../Components/Books.jsx';
+import Navbar from '../Components/Home_Page/Navbar.jsx';
+
+
 
 class Home extends Component {
   render(){
     return(
 
       <div>
+      
         <header>
           <Navbar />
         </header>
 
-
-
-        <Books />
       </div>
 
       );
