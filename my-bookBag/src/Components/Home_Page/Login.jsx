@@ -1,17 +1,13 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
+import Toggle from './Toggle.jsx';
 
-
-
-class LoginBar extends Component {
+class Login extends Component {
 
   constructor(props){
     super(props);
     this.state ={account: {username: '',password: ''}, isLoggedIn: false};
-
-
     this.handleChangeFor = this.handleChangeFor.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+
   }
 
   handleChangeFor = (propertyName) => (event) => {
@@ -25,40 +21,22 @@ class LoginBar extends Component {
 
   }
 
-  handleSubmit(event) {
-    if(this.state.account.username == 'Karl'){
-      this.isLoggedIn = true;
-    }else{
-      event.preventDefault();
-    }
-  }
-
   render(){
     return(
-            <form className="form-inline" onSubmit={this.handleSubmit}>
+            <form className="form-inline">
               <div className="form-row">
                 <div className="col">
-
-
                   <input type="text" className="form-control" placeholder="Username" value={this.state.account.username} onChange={this.handleChangeFor('username')} />
                 </div>
-
                 <div className="col">
                   <input type="text" className="form-control" placeholder="Password" value={this.state.password} onChange={this.handleChangeFor('password')} />
                 </div>
-
                 <div className="sm-col">
-                  <button type="submit" className="btn btn-info" value="Login">
-                  Login
-                  </button>
+                  <Toggle />
                 </div>
-
               </div>
             </form>
-
-
-
     )
   }
 }
-export default LoginBar
+export default Login;

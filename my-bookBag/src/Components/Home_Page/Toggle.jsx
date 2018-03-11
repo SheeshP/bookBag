@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
 
 class Toggle extends Component {
   constructor(props){
@@ -15,8 +14,6 @@ class Toggle extends Component {
       isToggleIn: !prevState.isToggleIn
     }));
   }
-
-
 
   render() {
       return(
