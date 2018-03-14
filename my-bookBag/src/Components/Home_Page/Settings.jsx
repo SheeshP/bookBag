@@ -7,10 +7,10 @@ class Settings extends Component{
 
     let settings = {
    'mysettings.general.name': 'Green Team',
-   'mysettings.general.color-theme': 'purple',
+   'mysettings.general.color-theme': 'grey',
    'mysettings.general.email': 'GreenTeam@me.com',
    'mysettings.general.password': '*********',
-   'mysettings.general.picture': 'earth',
+   'mysettings.general.picture': 'male',
    'mysettings.profile.firstname': 'Green',
    'mysettings.profile.lastname': 'Team',
  };
@@ -52,11 +52,14 @@ return(
                       <select name="mysettings.general.color-theme" id="profileColor" className="form-control" defaultValue={settings['mysettings.general.color-theme']}>
                         <option value="blue">Blue</option>
                         <option value="red">Red</option>
-                        <option value="purple">Purple</option>
-                        <option value="orange">Orange</option>
+                        <option value="grey">Grey</option>
+                        <option value="yellow">Yellow</option>
                       </select>
-                        <label for="picture">Picture: </label>
-                        <input type="text" className="form-control" name="mysettings.general.picture" placeholder="Email" id="general.picture" defaultValue={settings['mysettings.general.picture']} />
+                      <label for="profileAvatar">Profile Avatar: </label>
+                        <select name="mysettings.general.picture" id="profileAvatar" className="form-control" defaultValue={settings['mysettings.general.picture']}>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                        </select>
                         <label for="email">Email: </label>
                         <input type="text" className="form-control" name="mysettings.general.email" placeholder="Email" id="general.email" defaultValue={settings['mysettings.general.email']} />
                         <label for="password">Password: </label>
@@ -68,7 +71,7 @@ return(
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onClick={this.myClick}>Save changes</button>
+          <button type="button" class="btn btn-info" onClick={this.myClick}>Save changes</button>
         </div>
       </div>
     </div>

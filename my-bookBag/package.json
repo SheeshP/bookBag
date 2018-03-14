@@ -19,6 +19,7 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "react-icons-kit": "^1.0.7"
+    "react-icons-kit": "^1.0.7",
+    "react-svg-loader": "^2.1.0"
   }
 }

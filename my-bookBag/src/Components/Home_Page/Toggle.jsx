@@ -12,7 +12,11 @@ class Toggle extends Component {
   handleLoginClick() {
     this.setState(prevState =>({
       isToggleIn: !prevState.isToggleIn
-    }));
+    }
+
+  ));
+
+
   }
 
   render() {
@@ -23,5 +27,10 @@ class Toggle extends Component {
 
     );
   }
+
+
+
+
+
 }
 export default Toggle
