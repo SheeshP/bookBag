@@ -1,9 +1,16 @@
+
 .jumbotron{
-  background-image: url(../Images/book3.jpg);
+  background-image: url(./slide-03.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  min-height: 300px;
   color: white;
+  text-align: center;
+}
 
-    margin-bottom: 0;
+.titleTag{
+  font-size: 70px;
+  position: relative;
+  text-shadow: 2px 2px 4px #000000;
 }

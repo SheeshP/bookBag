@@ -1,1 +1,50 @@
 
+
+.science{
+  position: relative;
+  font-size: 40px;
+  left:80px;
+  top: -10px;
+}
+
+.earth{
+  width:348.5px;
+  height:350px;
+}
+
+.math2{
+  position: relative;
+  font-size: 40px;
+  left:100px;
+  top: -10px;
+}
+
+.math{
+  width:348.5px;
+  height:350px;
+}
+
+.plus{
+  position: relative;
+  top: 90px;
+  left:110px;
+}
+
+.boxsize{
+  width: 348.5px;
+  height: 350px;
+  color: Grey;
+}
+.card-text-add{
+  position: relative;
+  font-size: 40px;
+  left:20px;
+  top: -10px;
+  height:63px;
+}
+
+.add{
+  position: relative;
+  top: 70px;
+  text-align: center;
+}

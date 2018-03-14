@@ -4,9 +4,9 @@
 
 .row .b{
 position: absolute;
-
-bottom: -30px;
-right: 0px;
+bottom: 20px;
+top: relative;
+right: 20px;
 }
 
 a:visited{
@@ -15,4 +15,25 @@ a:visited{
 
 a:hover{
   color:#0CF;
+}
+
+.titleLoc{
+  position: absolute;
+font-weight: 900 ;
+left: 75px;
+color: white;
+font-size: 25px;
+}
+
+.list-unstyled{
+  font-size: 24px;
+}
+
+.v{
+  position: relative;
+  left: 25px;
+}
+
+.aboutBag{
+  position: relative;
 }

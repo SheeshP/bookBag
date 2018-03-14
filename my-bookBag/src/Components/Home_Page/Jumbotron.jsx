@@ -1,24 +1,18 @@
 import React, {Component} from 'react';
-import Navbar from './Navbar.jsx';
-import './Jumbotron.css';
+import './Jumbotron.css'
 
-class Jumbotron extends Component {
+class Jumbotron extends Component{
   render(){
     return(
-      <div className= "jumbotron jumbotron-fluid">
-      <div>
 
-      <section className="jumbotron text-center">
-
+      <div className="jumbotron jumbotron-fluid">
         <div className="container">
-
-          <h1 className="jumbotron-heading">bookBag</h1>
-          
+          <h className="titleTag"><strong>Book Bags</strong></h>
+          <p className="lead">{this.props.subtitle}</p>
         </div>
-      </section>
       </div>
-      </div>
+
     );
-    }
   }
+}
 export default Jumbotron;
