@@ -21,7 +21,7 @@ class Toggle extends Component {
 
   render() {
       return(
-        <button type="submit" className="btn btn-info" onClick={this.handleLoginClick}>
+        <button type="button" className="btn btn-info" onClick={this.handleLoginClick}>
         {this.state.isToggleIn ? 'Login' : 'Logout'}
       </button>
 

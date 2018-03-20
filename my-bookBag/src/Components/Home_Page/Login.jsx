@@ -6,18 +6,6 @@ class Login extends Component {
   constructor(props){
     super(props);
     this.state ={account: {username: '',password: ''}, isLoggedIn: false};
-    this.handleChangeFor = this.handleChangeFor.bind(this);
-
-  }
-
-  handleChangeFor = (propertyName) => (event) => {
-    const {account} = this.state;
-    const newAccount = {
-      ...account,
-      [propertyName]:event.target.value
-    };
-
-    this.setState({account: newAccount});
 
   }
 
@@ -26,10 +14,10 @@ class Login extends Component {
             <form className="form-inline">
               <div className="form-row">
                 <div className="col">
-                  <input type="text" className="form-control" placeholder="Username" value={this.state.account.username} onChange={this.handleChangeFor('username')} />
+                  <input type="text" className="form-control" placeholder="Username" value={this.state.username}  />
                 </div>
                 <div className="col">
-                  <input type="text" className="form-control" placeholder="Password" value={this.state.password} onChange={this.handleChangeFor('password')} />
+                  <input type="text" className="form-control" placeholder="Password" value={this.state.password}  />
                 </div>
                 <div className="sm-col">
                   <Toggle />

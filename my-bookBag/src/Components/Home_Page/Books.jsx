@@ -3,12 +3,13 @@ import './earth.jpg';
 import './lips.jpg';
 import './Books.css';
 import NewBookClick from './NewBookClick.jsx';
+import bagSettings from './bagSettings.jsx'
 
 class Books extends Component{
 
 render(){
     return(
-    
+
       <div class="album py-5 bg-light">
         <div class="container">
 
@@ -33,11 +34,13 @@ render(){
               <div className="w card mb-4 bg-warning text-white box-shadow" >
                 <img className="earth card-img-top" src={require('./earth.jpg')}></img>
                 <div class="card-body">
-                  <a className="science" href="#" ><strong> Science  </strong> </a>
+                  <a className="science" href="#" ><strong> Science </strong>
+                    <span className="tooltiptext">Click to navigate into this bookbag</span>
+                  </a>
                   <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-info">Edit BookBag</button>
-                    </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info">Edit BookBag</button>
+                  </div>
                     <small class="text-muted">March 13, 2018</small>
                   </div>
                 </div>
@@ -48,7 +51,9 @@ render(){
               <div class="card mb-4 bg-danger box-shadow">
                 <img class="math card-img-top" src={require('./lips.jpg')}></img>
                 <div class="card-body">
-                <a className="math2" href="#" ><strong> Music </strong> </a>
+                <a className="math2" href="#" ><strong> Music </strong>
+                  <span className="tooltiptext">Click to navigate into this bookbag</span>
+                </a>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-info">Edit BookBag</button>
