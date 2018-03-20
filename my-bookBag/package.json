@@ -9,6 +9,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.0",
     "react-settings-pane": "^0.1.5",
+    "react-sidebar": "^2.3.2",
     "react-sidenav": "^2.1.2",
     "reactstrap": "^5.0.0-alpha.4"
   },

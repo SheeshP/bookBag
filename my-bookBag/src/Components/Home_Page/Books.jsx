@@ -34,7 +34,7 @@ render(){
               <div className="w card mb-4 bg-warning text-white box-shadow" >
                 <img className="earth card-img-top" src={require('./earth.jpg')}></img>
                 <div class="card-body">
-                  <a className="science" href="#" ><strong> Science </strong>
+                  <a className="science" href="/editor" ><strong> Science </strong>
                     <span className="tooltiptext">Click to navigate into this bookbag</span>
                   </a>
                   <div class="d-flex justify-content-between align-items-center">
