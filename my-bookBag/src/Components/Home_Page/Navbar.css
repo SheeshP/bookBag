@@ -1,39 +1,43 @@
-.row{
+.row {
   position: relative;
 }
 
-.row .b{
-position: absolute;
-bottom: 20px;
-top: relative;
-right: 20px;
-}
-
-a:visited{
-  color:white;
-}
-
-a:hover{
-  color:#0CF;
-}
-
-.titleLoc{
+.row .b {
   position: absolute;
-font-weight: 900 ;
-left: 75px;
-color: white;
-font-size: 25px;
+  bottom: 20px;
+  top: relative;
+  right: 20px;
 }
 
-.list-unstyled{
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #0cf;
+}
+
+.titleLoc {
+  position: absolute;
+  font-weight: 900;
+  left: 75px;
+  color: white;
+  font-size: 25px;
+}
+
+.list-unstyled {
   font-size: 24px;
 }
 
-.v{
+.v {
   position: relative;
   left: 25px;
 }
 
-.aboutBag{
+.aboutBag {
   position: relative;
+}
+
+.navbar {
+  position: sticky;
 }

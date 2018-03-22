@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from '../Components/Home_Page/Navbar.jsx';
-
+import Nav from '../Components/Editor_Page/Nav.jsx';
 import './Editor.css';
 
 class Editor extends Component {
@@ -9,28 +9,12 @@ class Editor extends Component {
     return(
       <div>
 
+      <div>
 
-<Navbar/>
-      <div class="grid">
-
-
-        <aside class="sidebar-left">
-          <div>
-          <h1>Hello</h1>
-          </div>
-        </aside>
-
-
-        <article>
-          Article
-        </article>
-
-        <aside class="sidebar-right">
-          Right Sidebar
-        </aside>
-
-
+      <Navbar/>
       </div>
+      <Nav/>
+
       </div>
 
 
