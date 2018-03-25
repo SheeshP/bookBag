@@ -1,157 +1,36 @@
 import React, { Component } from "react";
 import FilePanel from "./file_panel";
+import Notebook from "./Notebook";
 
 import "./RightSide.css";
 
 class Nav extends Component {
+  constructor(props) {
+    super(props);
+    this.handler = this.handler.bind(this);
+    this.state = {
+      currentNotebook: "1"
+    };
+  }
+
+  handler(e) {
+    e.preventDefault();
+    this.setState({
+      currentNotebook: "2"
+    });
+  }
+
   render() {
     return (
       <body>
         <div class="Container">
           <div class="Left">
-            <FilePanel />
+            <FilePanel handler={this.handler} />
           </div>
+
           <div class="Middle">
-            To position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc: To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc: To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc: To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc: To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc: To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc: To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:To position the main content in the above
-            code I have used negative margin to pull it into place and padding
-            at the top so content starts as expected. This decision was purely
-            for better browser support. A cleaner approach would be calc:To
-            position the main content in the above code I have used negative
-            margin to pull it into place and padding at the top so content
-            starts as expected. This decision was purely for better browser
-            support. A cleaner approach would be calc:To position the main
-            content in the above code I have used negative margin to pull it
-            into place and padding at the top so content starts as expected.
-            This decision was purely for better browser support. A cleaner
-            approach would be calc:
+            <p> {this.state.currentNotebook} </p>
+            <Notebook />
           </div>
           <div class="Right">Right Content</div>
         </div>

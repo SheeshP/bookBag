@@ -11,6 +11,7 @@ class FilePanel extends Component {
           <div class="panel panel-default">
             <div class="panel-heading">
               <h5>Bookbag Name Goes Here</h5>
+              <button onClick={this.props.handler} />
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ class NotebookButton extends Component {
     return (
       <li>
         <div className="btn-group">
-          <button className="btn btn-secondary">
+          <button className="btn btn-secondary" onClick={this.props.handler}>
             {" "}
             {this.props.notebook.name}{" "}
           </button>

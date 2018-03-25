@@ -5,10 +5,9 @@ class Notebook extends Component {
   render() {
     return (
       <div>
-        <div>
-          <button className="btn btn-default btn-circle btn-lg">
-            {this.props.name}
-          </button>
+        <div className="panel panel-default">
+          <div className="panel-heading">Panel Heading</div>
+          <div className="panel-body">Panel Content</div>
         </div>
       </div>
     );
