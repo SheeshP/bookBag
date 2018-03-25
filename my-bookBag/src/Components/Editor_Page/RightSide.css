@@ -7,10 +7,8 @@ body {
   overflow-x: hidden;
 }
 /*Just removing default browser padding/margin*/
-html,
+
 body {
-  padding: 0;
-  margin: 0;
   color: #ebebeb;
 }
 /*Flexbox gives us the flexiness we need. The top just stays put as there is no scrolling on the body due to the page never exceeding viewport height*/
@@ -21,7 +19,7 @@ body {
   overflow: hidden;
   height: 100vh;
   margin-top: -100px;
-  padding-top: 100px;
+  padding-top: -100px;
   position: relative;
   width: 100%;
   backface-visibility: hidden;
@@ -35,15 +33,20 @@ WebKit inertia scrolling is being added here for any present/future devices that
 .Right {
   overflow: auto;
   height: auto;
-  padding: 0.5rem;
 }
 
 /*  Left and Right are set sizes while the Middle is set to flex one so it occupies all remaining space. This could be set as a width too if prefereable, perhaps using calc.*/
 .Left {
   height: 100%;
-  width: 12.5rem;
+  width: 20rem;
   background-color: grey;
   position: sticky;
+}
+.cat {
+  position: relative;
+  top: 100px;
+  left: 0px;
+  width: 325px;
 }
 
 .Middle {

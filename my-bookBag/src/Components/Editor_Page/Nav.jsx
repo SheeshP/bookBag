@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './RightSide.css';
+import Cal from './Cal.jsx';
 
 class Nav extends Component {
 
@@ -8,7 +9,7 @@ class Nav extends Component {
 
 <body>
     <div class="Container">
-        <div class="Left">Left Content</div>
+        <div class="Left"><div class="cat"><Cal/></div></div>
         <div class="Middle">To position the main content in the above code I have used negative margin to pull it into place and padding at the top so content starts as expected. This decision was purely for better browser support. A cleaner approach would be calc:
         To position the main content in the above code I have used negative margin to pull it into place and padding at the top so content starts as expected. This decision was purely for better browser support. A cleaner approach would be calc:
         To position the main content in the above code I have used negative margin to pull it into place and padding at the top so content starts as expected. This decision was purely for better browser support. A cleaner approach would be calc:
