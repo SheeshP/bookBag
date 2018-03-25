@@ -9,14 +9,14 @@ class Nav extends Component {
     super(props);
     this.handler = this.handler.bind(this);
     this.state = {
-      currentNotebook: "1"
+      currentNotebook: "Astronomy"
     };
   }
 
   handler(e) {
     e.preventDefault();
     this.setState({
-      currentNotebook: "2"
+      currentNotebook: "Chemistry"
     });
   }
 
@@ -29,8 +29,7 @@ class Nav extends Component {
           </div>
 
           <div class="Middle">
-            <p> {this.state.currentNotebook} </p>
-            <Notebook />
+            <Notebook name={this.state.currentNotebook} />
           </div>
           <div class="Right">Right Content</div>
         </div>
