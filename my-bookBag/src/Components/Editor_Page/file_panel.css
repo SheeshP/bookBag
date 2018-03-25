@@ -1,0 +1,9 @@
+.btn-circle.btn-lg {
+  width: 75px;
+  height: 75px;
+  padding: 25px 25px;
+  font-size: 12px;
+  line-height: 1.33;
+  border-radius: 50px;
+  -moz-border-radius: 5px;
+}
