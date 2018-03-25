@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FilePanel from "./file_panel";
 import Notebook from "./Notebook";
+import Cal from "./Cal.jsx";
 
 import "./RightSide.css";
 

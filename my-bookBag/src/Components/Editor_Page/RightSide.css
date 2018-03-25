@@ -32,7 +32,7 @@ WebKit inertia scrolling is being added here for any present/future devices that
 */
 .cat {
   position: relative;
-  top: 100px;
+  top: 400px;
   left: 0px;
   width: 325px;
 }
@@ -42,13 +42,12 @@ WebKit inertia scrolling is being added here for any present/future devices that
 .Right {
   overflow: auto;
   height: auto;
-  padding: 0.5rem;
 }
 
 /*  Left and Right are set sizes while the Middle is set to flex one so it occupies all remaining space. This could be set as a width too if prefereable, perhaps using calc.*/
 .Left {
   height: 100%;
-  width: 12.5rem;
+  width: 325px;
   background-color: grey;
   position: sticky;
 }
