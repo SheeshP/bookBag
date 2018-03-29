@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import Navbar from '../Home_Page/Navbar.jsx';
+
 import './SideLeft.css';
 import Cal from './Cal.jsx';
-
 
 class SideLeft extends Component {
 
@@ -34,7 +33,7 @@ class SideLeft extends Component {
                       </ul>
                   </li>
                   <li>
-                    <a href="#coscSubmenu" data-toggle="collapse" aria-expanded="false">Computer Sceince</a>
+                    <a href="#coscSubmenu" data-toggle="collapse" aria-expanded="false">Computer Science</a>
                     <ul class="collapse list-unstyled" id="coscSubmenu">
                       <li><a href="#">- Software Notes</a></li>
                       <li><a href="#">- Data Structure Notes</a></li>
