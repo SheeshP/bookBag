@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Sideright.css';
 import Chat from './Chat.jsx';
 import StyleFont from './StyleFont.jsx';
+import Friends from './Friends.jsx';
 
 class Sideright extends Component {
 
@@ -10,7 +11,9 @@ class Sideright extends Component {
     return (
 
           <nav id="sidebar1">
+          
           <StyleFont/>
+          <Friends/>
             <Chat/>
               </nav>
 
