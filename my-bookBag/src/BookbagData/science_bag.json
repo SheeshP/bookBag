@@ -5,7 +5,14 @@
       {
         "title": "Sky Notecards",
         "date": "3/17/2018",
-        "type": "notecard"
+        "type": "notecard",
+        "content": "Karl"
+      },
+      {
+        "title": "Money",
+        "date": "3/17/2018",
+        "type": "notecard",
+        "content": "Jeff"
       }
     ]
   },
