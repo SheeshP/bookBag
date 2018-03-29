@@ -10,7 +10,7 @@ class Chat extends Component {
     }
 
     handleNewUserMessage = (newMessage) => {
-      console.log(`New message incomig! ${newMessage}`);
+      console.log('New message incoming! ${newMessage}');
       // Now send the message throught the backend API
     }
 

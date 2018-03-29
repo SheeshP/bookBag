@@ -36,6 +36,17 @@
   width: 30px;
   height: 30px;
 }
+.modal-backdrop {
+  z-index: 900;
+}
+
+#Capa_2 {
+  position: absolute;
+  bottom: 80px;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+}
 .reddot {
   position: fixed;
   right: 20px;
