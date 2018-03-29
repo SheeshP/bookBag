@@ -1,8 +1,11 @@
-.bag{
-  bag { width: 10%; height: auto; }
+.bag {
+  bag {
+    width: 10%;
+    height: auto;
+  }
 }
 
-.mybook{
+.mybook {
   font-size: 50px;
   font-style: italic;
   position: relative;
@@ -10,20 +13,18 @@
   left: 450px;
 }
 
-.movebooks{
+.movebooks {
   position: relative;
   top: -30px;
 }
 
-.iconSpace{
-position: absolute;
-left: 50px;
-
+.iconSpace {
+  position: absolute;
+  left: 50px;
 }
 
-.v{
+.v {
   position: relative;
   left: 210px;
   top: -10px;
-
 }

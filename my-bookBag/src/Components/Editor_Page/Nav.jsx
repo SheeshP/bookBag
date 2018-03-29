@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './RightSide.css';
+import './Nav.css';
 import Cal from './Cal.jsx';
 
 class Nav extends Component {

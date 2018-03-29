@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import './Sideright.css';
-
+import Chat from './Chat.jsx';
+import StyleFont from './StyleFont.jsx';
 
 class Sideright extends Component {
 
   render () {
 
     return (
-      <div class="wrapper">
+
           <nav id="sidebar1">
-
-
+          <StyleFont/>
+            <Chat/>
               </nav>
-        </div>
+
 
 
 

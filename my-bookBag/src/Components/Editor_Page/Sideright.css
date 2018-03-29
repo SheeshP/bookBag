@@ -52,7 +52,7 @@ a:focus {
   width: 280px;
   position: fixed;
   top: 0;
-  left: 1090px;
+  right: 0;
   height: 100vh;
   z-index: 999;
   background: #7386d5;

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {SettingsPane, SettingsPage, SettingsContent, SettingsMenu} from 'react-settings-pane';
-import './Settings.css';
+
 
 class Settings extends Component{
   render(){

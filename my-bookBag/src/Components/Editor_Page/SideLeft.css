@@ -149,7 +149,7 @@ a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
-  width: calc(100% - 550px);
+  width: calc(100% - 510px);
   padding: 40px;
   min-height: 100vh;
   transition: all 0.3s;
