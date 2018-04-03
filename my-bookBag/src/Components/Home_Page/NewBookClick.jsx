@@ -55,14 +55,9 @@ class NewBookClick extends Component{
                             <option value="yellow">Yellow</option>
                           </select>
                           <label for="profileAvatar">Image: </label>
-                            <select name="mysettings.general.picture" id="profileAvatar" className="form-control" defaultValue={settings['mysettings.general.picture']}>
-                              <option value="science">Science</option>
-                              <option value="math">Math</option>
-                              <option value="english">English</option>
-                              <option value="music">Music</option>
-                              <option value="art">Art</option>
+                            <input type="file" className="form-control" placeholder="Bookbag image"/>
 
-                            </select>
+                            
                             </fieldset>
                     </SettingsPage>
               </SettingsPane>

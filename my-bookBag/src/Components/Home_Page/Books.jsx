@@ -4,6 +4,7 @@ import './lips.jpg';
 import './Books.css';
 import NewBookClick from './NewBookClick.jsx';
 import bagSettings from './bagSettings.jsx'
+import EditBookbag from './EditBookbag.jsx';
 
 class Books extends Component{
 
@@ -39,7 +40,7 @@ render(){
                   </a>
                   <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-info">Edit BookBag</button>
+                    <EditBookbag/>
                   </div>
                     <small class="text-muted">March 13, 2018</small>
                   </div>

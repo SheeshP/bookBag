@@ -1,0 +1,54 @@
+#rcorners1 {
+  border-color: black;
+  background-color: white;
+  position: fixed;
+  right: 10px;
+  top: 70px;
+  width: 260px;
+  height: 200px;
+}
+a .goog {
+  background-color: black;
+}
+.search {
+  margin-right: 10px;
+}
+
+#rcorners1 > button {
+  color: Black;
+  border-width: 0.1px;
+  padding-left: 15px;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.fonthead {
+  color: grey;
+  font-style: italic;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#rcorners1 > button:hover {
+  background-color: grey;
+  transition: all 0.3s linear 0s;
+}
+
+#Color {
+  padding-left: 20px;
+}
+.col-sm-3 {
+  margin-right: 20px;
+}
+#textColor {
+  margin-right: 30px;
+}
+#fontChanger {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+#fontSize {
+  margin-top: 5px;
+}

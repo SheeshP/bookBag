@@ -1,0 +1,15 @@
+.conversation-container > .header {
+  background-color: orange;
+}
+
+.message > .response {
+  background-color: white;
+  border: solid;
+  border-width: 0.5px;
+  border-color: grey;
+  color: white;
+}
+
+.title {
+  text-decoration: underline;
+}

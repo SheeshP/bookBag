@@ -1,21 +1,23 @@
 import React, { Component } from 'react';
 import Navbar from '../Components/Home_Page/Navbar.jsx';
-import Nav from '../Components/Editor_Page/Nav.jsx';
-import './Editor.css';
+
+import SideLeft from '../Components/Editor_Page/SideLeft.jsx';
+import Sideright from '../Components/Editor_Page/Sideright.jsx';
 
 class Editor extends Component {
 
   render(){
     return(
-      <div>
 
-      <div>
 
-      <Navbar/>
-      </div>
-      <Nav/>
+<div class="jum">
 
-      </div>
+
+  <SideLeft />
+  <Sideright/>
+
+</div>
+
 
 
       );

@@ -120,7 +120,7 @@ class Navbar extends Component {
               </div>
             </div>
           </div>
-          <div className="navbar navbar-dark bg-dark box-shadow">
+          <div className="navbar navbar-dark  box-shadow">
             <div className="container-fluid">
               <a href="/" className="navbar-brand d-flex align-items-center">
 
