@@ -72,8 +72,9 @@ class Friends extends Component {
       <td class="row1"><svg class="reddot" height="15" width="15">
   <circle cx="10" cy="10" r="5" fill="red" />
 </svg></td>
-
     </tr>
+
+
     <tr>
       <th scope="row"><svg id='Capa_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 59.27 59.27'>
     <path d='M53.566,44.427l-9.552-4.776C42.78,39.034,42,37.772,42,36.392v-3.748 c0.268-0.305,0.576-0.698,0.904-1.162c1.302-1.838,2.286-3.861,2.969-5.984C47.098,25.121,48,23.989,48,22.644v-4 c0-0.88-0.391-1.667-1-2.217v-5.783c0,0,1.187-9-11-9c-12.188,0-11,9-11,9v5.783c-0.609,0.55-1,1.337-1,2.217v4 c0,1.054,0.554,1.981,1.383,2.517C26.382,29.513,29,32.644,29,32.644v3.655c0,1.333-0.728,2.56-1.899,3.198l-8.921,4.866 C15.603,45.77,14,48.47,14,51.406v3.239h44v-3.043C58,48.563,56.283,45.786,53.566,44.427z'
@@ -104,12 +105,68 @@ class Friends extends Component {
 
     <tr>
       <th scope="row"></th>
-      <td class="row1">New Group</td>
+      <td class="row1">Add Friend</td>
       <td class="row1"></td>
 
     </tr>
+
   </tbody>
 </table>
+<div>
+<div>
+<a href="#" data-toggle="modal" data-target="#friendModal" ><svg id='Capa_8' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 59 59'>
+    <path d='M18.613,42.552l-7.907,4.313c-0.464,0.253-0.881,0.564-1.269,0.903C14.047,51.655,19.998,54,26.5,54 c6.454,0,12.367-2.31,16.964-6.144c-0.424-0.358-0.884-0.68-1.394-0.934l-8.467-4.233c-1.094-0.547-1.785-1.665-1.785-2.888v-3.322 c0.238-0.271,0.51-0.619,0.801-1.03c1.154-1.63,2.027-3.423,2.632-5.304c1.086-0.335,1.886-1.338,1.886-2.53v-3.546 c0-0.78-0.347-1.477-0.886-1.965v-5.126c0,0,1.053-7.977-9.75-7.977s-9.75,7.977-9.75,7.977v5.126 c-0.54,0.488-0.886,1.185-0.886,1.965v3.546c0,0.934,0.491,1.756,1.226,2.231c0.886,3.857,3.206,6.633,3.206,6.633v3.24 C20.296,40.899,19.65,41.986,18.613,42.552z'
+    fill='#ecf0f1' />
+    <path d='M26.953,1.004C12.32,0.754,0.254,12.414,0.004,27.047C-0.138,35.344,3.56,42.801,9.448,47.76 c0.385-0.336,0.798-0.644,1.257-0.894l7.907-4.313c1.037-0.566,1.683-1.653,1.683-2.835v-3.24c0,0-2.321-2.776-3.206-6.633 c-0.734-0.475-1.226-1.296-1.226-2.231v-3.546c0-0.78,0.347-1.477,0.886-1.965v-5.126c0,0-1.053-7.977,9.75-7.977 s9.75,7.977,9.75,7.977v5.126c0.54,0.488,0.886,1.185,0.886,1.965v3.546c0,1.192-0.8,2.195-1.886,2.53 c-0.605,1.881-1.478,3.674-2.632,5.304c-0.291,0.411-0.563,0.759-0.801,1.03V39.8c0,1.223,0.691,2.342,1.785,2.888l8.467,4.233 c0.508,0.254,0.967,0.575,1.39,0.932c5.71-4.762,9.399-11.882,9.536-19.9C53.246,13.32,41.587,1.254,26.953,1.004z'
+    fill='#556080' />
+    <circle cx='47' cy='46' r='12' fill='#71c386' />
+    <path d='M53,45h-5v-5c0-0.552-0.448-1-1-1s-1,0.448-1,1v5h-5c-0.552,0-1,0.448-1,1s0.448,1,1,1h5v5 c0,0.552,0.448,1,1,1s1-0.448,1-1v-5h5c0.552,0,1-0.448,1-1S53.552,45,53,45z'
+    fill='#fff' />
+</svg>
+</a>
+
+</div>
+  <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="friendModalLabel">Add Friend:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      <div class="modal-body">
+
+        <SettingsPane items={menu} index="/settings/general" >
+            <SettingsPage handler="/settings/general">
+              <fieldset className="form-group">
+                <label for="profileName">Find Friend: </label>
+                  <input type="text" className="form-control"  placeholder="Username"   />
+              </fieldset>
+
+              </SettingsPage>
+        </SettingsPane>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={this.cancelClick}>Cancel</button>
+        <button type="button" class="btn btn-info" onClick={this.myClickFriend}>Add</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+    <tr>
+      <th scope="row"></th>
+      <td id = "newgroup" class="row1">New Group</td>
+      <td class="row1"></td>
+
+    </tr>
+
+
 <div>
 <div>
 <a className="lin" href="#" data-toggle="modal" data-target="#exampleModal" ><svg id='Capa_2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 59 59'>
@@ -143,11 +200,11 @@ fill='#fff' />
               </fieldset>
                 <fieldset className="form-group">
                   <label for="profileColor">Add Friends: </label>
-                    <select  className="form-control" >
-                      <option value="blue">Bob Marley</option>
-                      <option value="green">Jen Aniston</option>
-                      <option value="red">Mrs. Claus</option>
-                      <option value="grey">Larry the Bird</option>
+                    <select class="form-control" >
+                      <option >Bob Marley</option>
+                      <option >Jen Aniston</option>
+                      <option >Mrs. Claus</option>
+                      <option >Larry the Bird</option>
                     </select>
 
                       </fieldset>
@@ -170,5 +227,8 @@ fill='#fff' />
   }
   myClick(){
     alert("Created New Study Group!");
+  }
+  myClickFriend(){
+    alert("Friend Added!");
   }
 }export default Friends;

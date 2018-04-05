@@ -49,10 +49,10 @@ render(){
             </div>
 
             <div class="col-md-4">
-              <div class="card mb-4 bg-danger box-shadow">
+              <div class="card mb-4 bg-danger text-white box-shadow">
                 <img class="math card-img-top" src={require('./lips.jpg')}></img>
                 <div class="card-body">
-                <a className="math2" href="#" ><strong> Music </strong>
+                <a className="math2" href="/editor" ><strong> Music </strong>
                   <span className="tooltiptext">Click to navigate into this bookbag</span>
                 </a>
                   <div class="d-flex justify-content-between align-items-center">

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import DayPicker, { DateUtils } from 'react-day-picker';
 import './Cal.css';
 
+
  class Cal extends Component {
   constructor(props) {
     super(props);
@@ -25,9 +26,11 @@ import './Cal.css';
   render() {
     return (
       <div class="calendar">
+
         <DayPicker
           selectedDays={this.state.selectedDays}
           onDayClick={this.handleDayClick}
+
         />
       </div>
     );

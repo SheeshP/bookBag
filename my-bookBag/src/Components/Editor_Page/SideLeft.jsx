@@ -1,12 +1,26 @@
 import React, { Component } from 'react';
+import {SettingsPane, SettingsPage, SettingsContent, SettingsMenu} from 'react-settings-pane';
 import MiddleScreen from './MiddleScreen.jsx';
 import './SideLeft.css';
 import Cal from './Cal.jsx';
+import Event from './Event.jsx';
 
 class SideLeft extends Component {
 
 
   render () {
+    let settings = {
+   'mysettings.general.name': 'English',
+   'mysettings.general.color-theme': 'green',
+   'mysettings.general.picture': 'art',
+
+ };
+  const menu = [
+   {
+     title: 'General',          // Title that is displayed as text in the menu
+     url: '/settings/general'  // Identifier (url-slug)
+   }
+  ];
 
     return (
 
@@ -56,11 +70,54 @@ class SideLeft extends Component {
                     </ul>
                   </li>
                   <li>
-                      <a href="#"></a>
+                  <a className="notebook" href="#" data-toggle="modal" data-target="#noteModal" >New Notebook
+                  </a>
+
+
+                    <div class="modal fade" id="noteModal" tabindex="-1" role="dialog" aria-labelledby="noteModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="noteModalLabel">New Notebook:</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                        <div class="modal-body">
+
+                          <SettingsPane items={menu} index="/settings/general" >
+                              <SettingsPage handler="/settings/general">
+                                <fieldset className="form-group">
+                                  <label for="profileName">Notebook Name: </label>
+                                    <input type="text" className="form-control"  placeholder="Name"   />
+                                </fieldset>
+                                  <fieldset className="form-group">
+                                    <label for="profileColor">Add Intital Number Notes: </label>
+                                      <select  className="form-control" >
+                                        <option value="blue">1</option>
+                                        <option value="green">2</option>
+                                        <option value="red">3</option>
+                                        <option value="grey">3</option>
+                                      </select>
+
+                                        </fieldset>
+                                </SettingsPage>
+                          </SettingsPane>
+
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal" onClick={this.cancelClick}>Cancel</button>
+                          <button type="button" class="btn btn-info" onClick={this.myClick}>Create</button>
+                        </div>
+                      </div>
+                      </div>
+                      </div>
+
                   </li>
               </ul>
 
               <Cal/>
+              <Event/>
           </nav>
           <div>
           <MiddleScreen/>
@@ -70,5 +127,8 @@ class SideLeft extends Component {
 
 
     );
+  }
+  myClick(){
+    alert("Created New Notebook!");
   }
 }export default SideLeft;
