@@ -39,14 +39,28 @@
 .modal-backdrop {
   z-index: 900;
 }
+#Capa_8 {
+  position: absolute;
+
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  bottom: 77px;
+}
 
 #Capa_2 {
   position: absolute;
   bottom: 80px;
   left: 10px;
   width: 30px;
-  height: 30px;
+  bottom: 38px;
 }
+#newgroup {
+  position: absolute;
+  left: 42px;
+  bottom: 38px;
+}
+
 .reddot {
   position: fixed;
   right: 20px;
