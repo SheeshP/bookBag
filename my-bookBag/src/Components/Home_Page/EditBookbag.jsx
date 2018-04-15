@@ -43,7 +43,7 @@ class EditBookbag extends Component{
                   <SettingsPage handler="/bagsettings/bag">
                     <fieldset className="form-group">
                       <label for="profileName">Bag Name: </label>
-                        <input type="text" className="form-control" name="mysettings.general.name" placeholder="Bookbag Name" id="general.name" defaultValue={bagsettings['mysettings.general.name']} />
+                        <input type="text" className="form-control"  placeholder="Bookbag Name"   />
                     </fieldset>
                       <fieldset className="form-group">
                         <label for="profileColor">Color-Theme: </label>

@@ -43,7 +43,7 @@ class NewBookClick extends Component{
                   <SettingsPage handler="/settings/general">
                     <fieldset className="form-group">
                       <label for="profileName">Name: </label>
-                        <input type="text" className="form-control" name="mysettings.general.name" placeholder="Name" id="general.name" defaultValue={settings['mysettings.general.name']} />
+                        <input type="text" className="form-control"  placeholder="Name" id="general.name" defaultValue={settings['mysettings.general.name']} />
                     </fieldset>
                       <fieldset className="form-group">
                         <label for="profileColor">Color-Theme: </label>
@@ -57,7 +57,7 @@ class NewBookClick extends Component{
                           <label for="profileAvatar">Image: </label>
                             <input type="file" className="form-control" placeholder="Bookbag image"/>
 
-                            
+
                             </fieldset>
                     </SettingsPage>
               </SettingsPane>
