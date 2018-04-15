@@ -5,6 +5,7 @@ import MiddleScreen from './MiddleScreen.jsx';
 import './SideLeft.css';
 import Cal from './Cal.jsx';
 import Event from './Event.jsx';
+import Note from './Note.jsx';
 
 class SideLeft extends Component {
   constructor(props){
@@ -67,30 +68,20 @@ class SideLeft extends Component {
                           <li><a href="#">- Organic Notes</a></li>
                           <li><a href="#">- Reaction Notes</a></li>
                           <li><a href="#">- Lab Notes</a></li>
+                          <li> <Note/>
+
+                  </li>
                       </ul>
                   </li>
                   <li>
                     <a href="#coscSubmenu" data-toggle="collapse" aria-expanded="false" onClick={this.handleCompChange}>Computer Science</a>
-                    <ul class="collapse list-unstyled" id="coscSubmenu">
-                      <li><a href="#">- Software Notes</a></li>
-                      <li><a href="#">- Data Structure Notes</a></li>
-                      <li><a href="#">- Machine Learning Textbook</a></li>
 
-                    </ul>
                       <a href="#bioSubmenu" data-toggle="collapse" aria-expanded="false" onClick={this.handleBioChange}>Biology</a>
-                      <ul class="collapse list-unstyled" id="bioSubmenu">
-                          <li><a href="#">- Anatomy Notes</a></li>
-                          <li><a href="#">- Ecosystem Notes</a></li>
-                          <li><a href="#">- Biology Textbook</a></li>
-                      </ul>
+
                   </li>
                   <li>
                     <a href="#econSubmenu" data-toggle="collapse" aria-expanded="false" onClick={this.handleEconChange}>Economics</a>
-                    <ul class="collapse list-unstyled" id="econSubmenu">
-                        <li><a href="#">- Macroeconomic Notes</a></li>
-                        <li><a href="#">- Microeconomic Notes</a></li>
-                        <li><a href="#">- Biology Textbook</a></li>
-                    </ul>
+
                   </li>
                   <li>
                   <a className="notebook" href="#" data-toggle="modal" data-target="#noteModal" >New Notebook
